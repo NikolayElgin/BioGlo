@@ -62,7 +62,7 @@ gulp.task('scripts', cb => {
 /* img */
 
 gulp.task('img', cb => {
-	gulp.src('./images/**/*')
+	gulp.src('./img/**/*')
 		.pipe(plumber())
 		.pipe(cache(imagemin({ // С кешированием
 			// .pipe(imagemin({ // Сжимаем изображения без кеширования
@@ -73,7 +73,7 @@ gulp.task('img', cb => {
 			}],
 			use: [pngquant()],
 		})))
-		.pipe(gulp.dest('dist/images'));
+		.pipe(gulp.dest('dist/img'));
 	cb();
 });
 
