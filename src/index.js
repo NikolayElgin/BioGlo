@@ -1,9 +1,8 @@
-'use strict';
 
-import "@babel/polyfill";//решает многие проблемы совместимости
-import 'nodelist-foreach-polyfill';//подключ. полифил foreach для IE11
+import '@babel/polyfill';// решает многие проблемы совместимости
+import 'nodelist-foreach-polyfill';// подключ. полифил foreach для IE11
 import elementClosest from 'element-closest';
-elementClosest(window);//вызываем его
+// вызываем его
 import 'formdata-polyfill';
 import 'es6-promise';
 import 'fetch-polyfill';
@@ -14,6 +13,8 @@ import accordionTwo from './modules/accordionTwo';
 import moreBlocks from './modules/moreBlocks';
 import accordion from './modules/accordion';
 import mySendFormCalc from './modules/mySendFormCalc';
+
+elementClosest(window);
 
 
 modalWindow();
